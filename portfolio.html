@@ -4,44 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>PORTFOLIO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Modern normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!-- body -->
-  <body>
+   <body>
     <!-- header -->
-    <header>
+     <header>
       <!-- top line nav -->
-      <nav>
+        <div class="container header-page-container">
+      <nav class="nav-page">
         <a class="nav-logo link" href="./index.html"><span class="color-web">WEB</span>STUDIO</a>
-        <ul class="ul-list">
-          <li><a class="nav-studio link" href="./index.html">Studio</a></li>
-          <li><a class="nav-portfolio link carrent" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="nav-contacts link" href="#">Contacts</a></li>
+        <ul class="ul-list nav-list">
+          <li class="nav-item"><a class="nav-studio link" href="./index.html">Studio</a></li>
+          <li class="nav-item"><a class="nav-portfolio link carrent" href="./portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-contacts link" href="#">Contacts</a></li>
         </ul>
       </nav>
       <!-- top line contacts -->
-      <ul class="ul-list">
+      <ul class="ul-list contacts-list">
         <li
           ><a class="header-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a></li
         >
         <li><a class="header-tel link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
       </ul>
+      </div>
     </header>
     <!-- Portfolio content -->
     <main>
       <section>
         <!-- Portfolio filter -->
+        <div class="container">
         <h1 class="visually-hidden">Filter</h1>
         <ul class="ul-list">
           <li><button class="btn filter-text filter-btn" type="button">All</button></li>
@@ -133,15 +139,18 @@
             <p class="project-text">Web Site</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
     <footer class="footer">
+      <div class="container">
       <a class="footer-logo link" href="./index.html"><span class="color-web">WEB</span>STUDIO</a>
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital marketing & growth
         solutions.
       </p>
+      </div>
     </footer>
   </body>
 </html>
