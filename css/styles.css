@@ -43,7 +43,8 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  outline: 2px solid #ff00008f;
+  list-style: none;
+  /* outline: 2px solid #ff00008f; */
 }
 
 img {
@@ -61,10 +62,6 @@ img {
   cursor: pointer;
   border: none;
   outline: 2px solid #ff00008f;
-}
-
-.ul-list {
-  list-style: none;
 }
 
 .carrent {
@@ -85,7 +82,7 @@ img {
 }
 
 .container {
-  max-width: 1188px;
+  max-width: 1158px;
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
@@ -111,6 +108,7 @@ img {
 .nav-page {
   display: flex;
   align-items: center;
+  gap: 76px;
 }
 
 .nav-logo {
@@ -119,7 +117,7 @@ img {
   font-size: 18px;
   line-height: 1.3;
   letter-spacing: 0.03em;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 
 }
 
@@ -135,10 +133,7 @@ img {
 .nav-list {
   display: flex;
   align-items: center;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .nav-studio {
@@ -174,11 +169,10 @@ img {
   display: flex;
   align-items: center;
   margin-left: auto;
-
+gap: 40px;
 }
 
 .header-mailto {
-  margin-right: 40px;
   color: var(--color-text-secondary);
 }
 
@@ -199,25 +193,26 @@ img {
 /* section Hero */
 
 .section-hero {
+
   padding-bottom: 0;
   background-color: var(--color-text-primary);
 }
 
 .hero-container {
-  height: 600px;
+  padding-top: 188px;
+   padding-bottom: 188px;
 }
 
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
-
   color: var(--color-text-hero);
+  /* display:block; */
   text-align: center;
   width: 494px;
-  padding-top: 180px;
-  padding-bottom: 40px;
-  margin: auto;
+  margin: 0 auto;
+ margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -227,14 +222,11 @@ img {
   letter-spacing: 0.04em;
   color: var(--color-text-hero);
   background-color: var(--color-logo-primary);
-
-  box-sizing: content-box;
-  display: flex;
+  display: block; 
   margin: auto;
-  margin-bottom: 196px;
-
+ 
+ 
   padding: 16px 32px;
-  gap: 10px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -248,22 +240,41 @@ img {
 
 /* section Feature */
 
+.feauter-container {
+display: flex;
+gap: 24px;
+ 
+}
+
 .feature-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .feature-text {
+  width: 264px;
   color: var(--color-text-secondary);
 }
 
 /* section What are we doing + Our team */
 
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.section-what{
+  padding-top: 0;
+}
+
 .title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 /*  section Our team */
@@ -290,6 +301,8 @@ img {
 
 .footer {
   background-color: var(--color-text-primary);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -299,6 +312,8 @@ img {
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: var(--color-logo-footer);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo:hover,
@@ -308,6 +323,7 @@ img {
 
 .footer-text {
   color: var(--color-text-footer);
+  width: 264px;
 }
 
 /* Portfolio page 2 */
