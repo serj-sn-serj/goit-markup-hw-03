@@ -14,10 +14,11 @@
 
   /* filter */
   --color-btn-filter: #f4f4fd;
-}
 
-/* tools */
-/* outline: 2px solid #ff00008f; */
+  /* others */
+  --indent: 24px;
+  --items: 4;
+}
 
 /* Body */
 body {
@@ -26,16 +27,17 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
   color: var(--color-text-primary);
 }
 
+/* reset styles */
 h1,
 h2,
 h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
-  outline: 2px solid #ff00008f;
 }
 
 ul,
@@ -44,7 +46,6 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  /* outline: 2px solid #ff00008f; */
 }
 
 img {
@@ -61,7 +62,6 @@ img {
   padding: 0;
   cursor: pointer;
   border: none;
-  outline: 2px solid #ff00008f;
 }
 
 .carrent {
@@ -81,28 +81,45 @@ img {
   margin: -1px;
 }
 
+/* Container page */
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid #ff00008f;
 }
 
-/* Header */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - (var(--indent) * var(--items)-1)) / var(--items));
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/**
+  |============================
+  | Header
+  |============================
+*/
 /* top line nav */
 
 .header-page {
   background: var(--color-text-hero);
   border-bottom: 1px solid var(--color-text-footer);
-
 }
 
 .header-page-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-page {
@@ -117,8 +134,8 @@ img {
   font-size: 18px;
   line-height: 1.3;
   letter-spacing: 0.03em;
-  /* margin-right: 76px; */
-
+  padding-top: var(--indent);
+  padding-bottom: var(--indent);
 }
 
 .color-web {
@@ -138,6 +155,8 @@ img {
 
 .nav-studio {
   font-weight: 500;
+  padding-top: var(--indent);
+  padding-bottom: var(--indent);
 }
 
 .nav-studio:hover,
@@ -147,6 +166,8 @@ img {
 
 .nav-portfolio {
   font-weight: 500;
+  padding-top: var(--indent);
+  padding-bottom: var(--indent);
 }
 
 .nav-portfolio:hover,
@@ -156,6 +177,8 @@ img {
 
 .nav-contacts {
   font-weight: 500;
+  padding-top: var(--indent);
+  padding-bottom: var(--indent);
 }
 
 .nav-contacts:hover,
@@ -169,11 +192,13 @@ img {
   display: flex;
   align-items: center;
   margin-left: auto;
-gap: 40px;
+  gap: 40px;
 }
 
 .header-mailto {
   color: var(--color-text-secondary);
+  padding-top: var(--indent);
+  padding-bottom: var(--indent);
 }
 
 .header-mailto:hover,
@@ -183,6 +208,8 @@ gap: 40px;
 
 .header-tel {
   color: var(--color-text-secondary);
+  padding-top: var(--indent);
+  padding-bottom: var(--indent);
 }
 
 .header-tel:hover,
@@ -190,17 +217,21 @@ gap: 40px;
   color: var(--color-focus-hover);
 }
 
-/* section Hero */
+
+/**
+  |============================
+  |section Hero
+  |============================
+*/
 
 .section-hero {
-
   padding-bottom: 0;
   background-color: var(--color-text-primary);
 }
 
 .hero-container {
   padding-top: 188px;
-   padding-bottom: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -208,11 +239,10 @@ gap: 40px;
   font-size: 56px;
   line-height: 1.1;
   color: var(--color-text-hero);
-  /* display:block; */
   text-align: center;
   width: 494px;
   margin: 0 auto;
- margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -222,12 +252,9 @@ gap: 40px;
   letter-spacing: 0.04em;
   color: var(--color-text-hero);
   background-color: var(--color-logo-primary);
-  display: block; 
+  display: block;
   margin: auto;
- 
- 
   padding: 16px 32px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -238,13 +265,11 @@ gap: 40px;
   color: var(--color-text-hero);
 }
 
-/* section Feature */
-
-.feauter-container {
-display: flex;
-gap: 24px;
- 
-}
+/**
+  |============================
+  | section Feature
+  |============================
+*/
 
 .feature-title {
   font-weight: 500;
@@ -258,15 +283,15 @@ gap: 24px;
   color: var(--color-text-secondary);
 }
 
-/* section What are we doing + Our team */
+/**
+  |============================
+  | section What
+  |============================
+*/
+/* section What are we doing + Our team title */
 
-.section {
-padding-top: 120px;
-padding-bottom: 120px;
-}
-
-.section-what{
-  padding-top: 0;
+.what-set-item {
+  --items: 3;
 }
 
 .title-section {
@@ -277,13 +302,19 @@ padding-bottom: 120px;
   text-align: center;
 }
 
-/*  section Our team */
+/**
+  |============================
+  |  section Our team
+  |============================
+*/
 
 .team {
   background-color: var(--color-btn-filter);
 }
 
 .card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--color-text-hero);
 }
 
@@ -291,13 +322,23 @@ padding-bottom: 120px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  padding-top: 32px;
+  text-align: center;
 }
+
 
 .team-text {
   color: var(--color-text-secondary);
+  padding-top: 8px;
+  padding-bottom: 32px;
+  text-align: center;
 }
 
-/*  Footer */
+/**
+  |============================
+  |  Footer
+  |============================
+*/
 
 .footer {
   background-color: var(--color-text-primary);
@@ -326,10 +367,29 @@ padding-bottom: 120px;
   width: 264px;
 }
 
-/* Portfolio page 2 */
+/**
+  |============================
+  |  Portfolio page 2
+  |============================
+*/
+
+/* section Porfolio */
+
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 /* Filter */
+.btn-list {
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
 .filter-btn {
+  padding: 12px 24px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   color: var(--color-logo-primary);
   background-color: var(--color-btn-filter);
 }
@@ -354,12 +414,22 @@ padding-bottom: 120px;
   background-color: var(--color-text-hero);
 }
 
+.card-wrapper {
+  border: 1px solid var(--color-text-footer);
+  border-top: none;
+}
+
 .project-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 
 .project-text {
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 32px;
   color: var(--color-text-secondary);
 }
