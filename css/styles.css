@@ -381,6 +381,7 @@ img {
 }
 
 /* Filter */
+
 .btn-list {
   justify-content: center;
   margin-bottom: 72px;
@@ -417,6 +418,10 @@ img {
 .card-wrapper {
   border: 1px solid var(--color-text-footer);
   border-top: none;
+}
+
+.set {
+  row-gap:48px;
 }
 
 .project-title {
