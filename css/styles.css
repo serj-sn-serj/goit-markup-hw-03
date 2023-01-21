@@ -421,7 +421,7 @@ img {
 }
 
 .set {
-  row-gap: 48px;
+  gap: 48px 24px;
 }
 
 .project-title {
