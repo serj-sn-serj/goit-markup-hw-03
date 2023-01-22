@@ -287,7 +287,7 @@ img {
 */
 /* section What are we doing + Our team title */
 
-.section-wha {
+.section-what {
   padding-top: 0;
 }
 
@@ -335,7 +335,6 @@ img {
 
 .team-text {
   color: var(--color-text-secondary);
-
   text-align: center;
 }
 
